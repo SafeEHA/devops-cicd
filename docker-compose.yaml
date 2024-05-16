@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   flask-app:
-    image: safeeha/flask-app:latest  # Specify the image name and tag
+    image: safeeha/flaskapp:latest  # Specify the image name and tag
     ports:
       - "5000:5000"  # Map container port 5000 to host port 5000
     volumes:
