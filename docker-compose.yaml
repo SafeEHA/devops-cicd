@@ -9,4 +9,4 @@ services:
       - .:/app  # Mount the current directory as a volume inside the container
     environment:
       - FLASK_APP=main.py  # Set the FLASK_APP environment variable to your main Python file
-    command: ["python", "main.py"]  # Specify the command to run your Flask app
+    command: ["python3", "main.py"]  # Specify the command to run your Flask app
