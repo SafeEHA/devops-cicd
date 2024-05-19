@@ -2,11 +2,10 @@ version: '3.8'
 
 services:
   flask-app:
-    image: safeeha/flaskapp:latest  # Specify the image name and tag
+    image: safeeha/flaskapp:latest 
     ports:
-      - "5000:5000"  # Map container port 5000 to host port 5000
+      - "5000:5000"  
     volumes:
-      - .:/app  # Mount the current directory as a volume inside the container
-    environment:
+      - .:/app 
       - FLASK_APP=main.py  # Set the FLASK_APP environment variable to your main Python file
-    command: ["python3", "main.py"]  # Specify the command to run your Flask app
+    
