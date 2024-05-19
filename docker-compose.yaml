@@ -5,7 +5,4 @@ services:
     image: safeeha/flaskapp:latest 
     ports:
       - "5000:5000"  
-    volumes:
-      - .:/app 
-      - FLASK_APP=main.py  # Set the FLASK_APP environment variable to your main Python file
     
